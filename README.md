@@ -14,23 +14,23 @@ ReStar是一个基于 Rust + egui 构建的 AI 辅助逆向工程工具，旨在
 
 ## 截图
 
-> ![screen1](image\screen1.png)
+> ![screen1](https://github.com/An2i/ReStar/blob/main/image/screen1.png)
 >
-> ![screen1](image\screen2.png)
+> ![screen1](https://github.com/An2i/ReStar/blob/main/image/screen2.png)
 >
-> ![screen1](image\screen3.png)
+> ![screen1](https://github.com/An2i/ReStar/blob/main/image/screen3.png)
 >
-> ![screen1](image\screen4.png)
+> ![screen1](https://github.com/An2i/ReStar/blob/main/image/screen4.png)
 >
-> ![screen1](image\screen5.png)
+> ![screen1](https://github.com/An2i/ReStar/blob/main/image/screen5.png)
 >
-> ![screen1](image\screen6.png)
+> ![screen1](https://github.com/An2i/ReStar/blob/main/image/screen6.png)
 >
-> ![screen1](image\screen7.png)
+> ![screen1](https://github.com/An2i/ReStar/blob/main/image/screen7.png)
 >
-> ![screen1](image\screen8.png)
+> ![screen1](https://github.com/An2i/ReStar/blob/main/image/screen8.png)
 >
-> ![screen1](image\screen9.png)
+> ![screen1](https://github.com/An2i/ReStar/blob/main/image/screen9.png)
 
 ## 环境要求
 
