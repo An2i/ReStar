@@ -37,6 +37,7 @@ fn build_api_messages_from(messages: &[ChatMessage]) -> Vec<ApiMessage> {
             每次响应都必须调用 software_analysis 工具输出 IDAPython 脚本，脚本必须支持IDA 9.1。\
             禁止直接回复文字，所有分析结果、思路、结论都必须以 IDAPython 脚本的形式通过工具输出。\
             每个脚本执行后，根据执行结果继续生成下一个分析脚本，直到分析完成。\
+            每个脚本开头必须调用sys.stdout = _orig_stdout和sys.stderr = _orig_stderr，并且不需要定义_orig_stdout和_orig_stderr。\
             分析完成的标志之一是分析完所有start函数调用链中的函数。\
             每个脚本末尾必须调用 idc.qexit(0) 强制退出 IDA 进程。\
             脚本执行的输出结果带有IDA插件加载结果的信息，请忽略掉非脚本定义的输出内容，仅分析脚本中定义的输出内容。\
