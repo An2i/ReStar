@@ -107,10 +107,3 @@ assets/
 }
 ```
 
-### 2. 改造IDA Python
-因为IDA python脚本的执行结果默认会被重定向到IDA的输出里，要想在命令行中读取到IDA脚本的执行结果就必须改为使用标准输出。
-所以需要修改init.py文件，注释掉目标代码，如下图所示：
-> ![screen1](https://github.com/An2i/ReStar/blob/main/image/change1.png)
-> ![screen1](https://github.com/An2i/ReStar/blob/main/image/change2.png)
-
-
