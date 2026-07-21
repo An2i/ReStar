@@ -1,0 +1,13 @@
+﻿.venv/
+frontend/node_modules/
+frontend/dist/
+runtime/uploads/
+runtime/reports/
+runtime/sessions/
+runtime/tool_audit.jsonl
+runtime/memory/
+*.log
+__pycache__/
+*.pyc
+.env
+.env.*

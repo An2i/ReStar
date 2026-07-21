@@ -1,0 +1,181 @@
+{
+  "read": {
+    "id": "read",
+    "name": "Read",
+    "command_line": "builtin:read_file",
+    "sandbox_command_line": "",
+    "description": "Read a file from the workspace filesystem with optional line offset and limit.",
+    "input_schema": {},
+    "is_builtin": true,
+    "created_at": "2026-05-12T06:29:24.676870+00:00",
+    "updated_at": "2026-05-12T06:29:24.676870+00:00"
+  },
+  "write": {
+    "id": "write",
+    "name": "Write",
+    "command_line": "builtin:write_file",
+    "sandbox_command_line": "",
+    "description": "Write text content to a workspace file.",
+    "input_schema": {},
+    "is_builtin": true,
+    "created_at": "2026-05-12T06:29:24.676870+00:00",
+    "updated_at": "2026-05-12T06:29:24.676870+00:00"
+  },
+  "edit": {
+    "id": "edit",
+    "name": "Edit",
+    "command_line": "builtin:edit_file",
+    "sandbox_command_line": "",
+    "description": "Replace text in a workspace file.",
+    "input_schema": {},
+    "is_builtin": true,
+    "created_at": "2026-05-12T06:29:24.676870+00:00",
+    "updated_at": "2026-05-12T06:29:24.676870+00:00"
+  },
+  "glob": {
+    "id": "glob",
+    "name": "Glob",
+    "command_line": "builtin:glob",
+    "sandbox_command_line": "",
+    "description": "Find files by glob pattern under the workspace.",
+    "input_schema": {},
+    "is_builtin": true,
+    "created_at": "2026-05-12T06:29:24.676870+00:00",
+    "updated_at": "2026-05-12T06:29:24.676870+00:00"
+  },
+  "grep": {
+    "id": "grep",
+    "name": "Grep",
+    "command_line": "builtin:grep",
+    "sandbox_command_line": "",
+    "description": "Search file contents by regular expression.",
+    "input_schema": {},
+    "is_builtin": true,
+    "created_at": "2026-05-12T06:29:24.676870+00:00",
+    "updated_at": "2026-05-12T06:29:24.676870+00:00"
+  },
+  "bash": {
+    "id": "bash",
+    "name": "Bash",
+    "command_line": "builtin:execute_command",
+    "sandbox_command_line": "",
+    "description": "Execute a guarded shell command in the workspace.",
+    "input_schema": {},
+    "is_builtin": true,
+    "created_at": "2026-05-12T06:29:24.676870+00:00",
+    "updated_at": "2026-05-12T06:29:24.676870+00:00"
+  },
+  "powershell": {
+    "id": "powershell",
+    "name": "PowerShell",
+    "command_line": "builtin:powershell",
+    "sandbox_command_line": "",
+    "description": "Execute a guarded PowerShell command in the workspace.",
+    "input_schema": {},
+    "is_builtin": true,
+    "created_at": "2026-05-12T06:29:24.676870+00:00",
+    "updated_at": "2026-05-12T06:29:24.676870+00:00"
+  },
+  "web-fetch": {
+    "id": "web-fetch",
+    "name": "WebFetch",
+    "command_line": "builtin:web_fetch",
+    "sandbox_command_line": "",
+    "description": "Fetch a web page and return text content for analysis.",
+    "input_schema": {},
+    "is_builtin": true,
+    "created_at": "2026-05-12T06:29:24.676870+00:00",
+    "updated_at": "2026-05-12T06:29:24.676870+00:00"
+  },
+  "web-search": {
+    "id": "web-search",
+    "name": "WebSearch",
+    "command_line": "builtin:web_search",
+    "sandbox_command_line": "",
+    "description": "Run a lightweight web search and return result links.",
+    "input_schema": {},
+    "is_builtin": true,
+    "created_at": "2026-05-12T06:29:24.676870+00:00",
+    "updated_at": "2026-05-12T06:29:24.676870+00:00"
+  },
+  "f48b79a3a88646a1b2c8e8e491280c9f": {
+    "id": "f48b79a3a88646a1b2c8e8e491280c9f",
+    "name": "cdb",
+    "command_line": "\"D:\\Rolan\\bin\\ReverseTools\\WinDbg(x64)\\cdb.exe\" -logo \"{log_path}\" -c \"{commands}; q\" \"{target_path}\"",
+    "sandbox_command_line": "\"D:\\Tools\\WinDbg(x64)\\cdb.exe\" -logo \"{log_path}\" -c \"{commands}; q\" \"{target_path}\"",
+    "description": "使用 Windows Debugging Tools 的 cdb 调试 Windows 可执行程序。适用于加载 EXE、设置断点、运行、查看寄存器/调用栈/模块/异常信息。参数 target_path 为待调试程序路径，commands 为 cdb 命令序列，log_path 为日志输出路径。示例完整命令：\"D:\\Rolan\\bin\\ReverseTools\\WinDbg(x64)\\cdb.exe\" -logo \"C:\\log.txt\" -c \".symfix; g; q\" \"D:\\test.exe\"。",
+    "input_schema": {
+      "type": "object",
+      "required": [
+        "commands",
+        "target_path"
+      ],
+      "properties": {
+        "log_path": {
+          "type": "string",
+          "description": "设置调试会话的日志输出文件路径"
+        },
+        "commands": {
+          "type": "string",
+          "description": "执行指定的调试命令字符串，并在命令结束后自动退出"
+        },
+        "target_path": {
+          "type": "string",
+          "description": "要调试的目标程序或文件路径"
+        }
+      }
+    },
+    "is_builtin": false,
+    "created_at": "2026-05-29T06:21:08.306480+00:00",
+    "updated_at": "2026-06-01T09:59:36.740588+00:00"
+  },
+  "a26a125983b84b159aecc493188b17b0": {
+    "id": "a26a125983b84b159aecc493188b17b0",
+    "name": "GDB",
+    "command_line": "gdb -q -batch -ex \"{commands}\" \"{target_path}\"",
+    "sandbox_command_line": "gdb -q -batch -ex \"{commands}\" \"{target_path}\"",
+    "description": "使用 GNU gdb 调试或分析可执行程序。参数 target_path 为目标程序路径，commands 为 gdb 命令序列。适合查看入口点、反汇编、断点、寄存器、调用栈、符号、内存映射等信息。示例 commands: \"info files; info functions; disassemble main; quit\"。",
+    "input_schema": {
+      "type": "object",
+      "required": [
+        "target_path",
+        "commands"
+      ],
+      "properties": {
+        "target_path": {
+          "type": "string",
+          "description": "要调试或分析的目标程序路径."
+        },
+        "commands": {
+          "type": "string",
+          "description": "要执行的 gdb 命令序列，例如 info files; info functions; disassemble main; quit."
+        }
+      }
+    },
+    "is_builtin": false,
+    "created_at": "2026-06-03T06:09:20.017660+00:00",
+    "updated_at": "2026-06-03T06:09:20.017660+00:00"
+  },
+  "c51fbb93872a49fe8ca3c261136d257a": {
+    "id": "c51fbb93872a49fe8ca3c261136d257a",
+    "name": "upx",
+    "command_line": "\"D:\\Rolan\\bin\\SoftwareProtect\\upx-5.1.1-win64\\upx.exe\" -d \"{target_path}\"",
+    "sandbox_command_line": "\"D:\\Rolan\\bin\\SoftwareProtect\\upx-5.1.1-win64\\upx.exe\" -d \"{target_path}\"",
+    "description": "可用于upx脱壳。",
+    "input_schema": {
+      "type": "object",
+      "required": [
+        "target_path"
+      ],
+      "properties": {
+        "target_path": {
+          "type": "string",
+          "description": "目标文件路径"
+        }
+      }
+    },
+    "is_builtin": false,
+    "created_at": "2026-06-22T07:20:34.629395+00:00",
+    "updated_at": "2026-06-22T07:20:34.629395+00:00"
+  }
+}

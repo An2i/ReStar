@@ -1,0 +1,81 @@
+{
+  "capability_types": {
+    "LLM 平台": {
+      "name": "LLM 平台",
+      "is_default": true,
+      "created_at": "2026-04-30T02:47:16.285126+00:00",
+      "updated_at": "2026-04-30T02:47:16.285126+00:00"
+    },
+    "威胁情报平台": {
+      "name": "威胁情报平台",
+      "is_default": true,
+      "created_at": "2026-06-06T10:11:47.009077+00:00",
+      "updated_at": "2026-06-06T10:11:47.009077+00:00"
+    },
+    "沙箱": {
+      "name": "沙箱",
+      "is_default": false,
+      "created_at": "2026-05-12T01:28:46.581545+00:00",
+      "updated_at": "2026-05-12T01:28:46.581545+00:00"
+    }
+  },
+  "modules": {
+    "b6ae91053dde45fc9dbd4e549149e8ac": {
+      "id": "b6ae91053dde45fc9dbd4e549149e8ac",
+      "capability_type": "沙箱",
+      "name": "沙箱",
+      "url": "http://192.168.242.129:8765",
+      "model": "",
+      "api_key": "",
+      "token": "",
+      "cookie": "",
+      "capabilities": {},
+      "status": "online",
+      "created_at": "2026-05-26T05:59:51.292727+00:00",
+      "updated_at": "2026-05-26T07:28:45.650498+00:00"
+    },
+    "907a338fbd604c61a6d848d155fcc147": {
+      "id": "907a338fbd604c61a6d848d155fcc147",
+      "capability_type": "LLM 平台",
+      "name": "deepseek",
+      "url": "https://api.deepseek.com",
+      "model": "deepseek-v4-flash",
+      "api_key": "待填",
+      "token": "",
+      "cookie": "",
+      "capabilities": {
+        "probe": {
+          "ok": true,
+          "http_status": 401,
+          "endpoint": "https://api.deepseek.com",
+          "error": "Authorization Required"
+        }
+      },
+      "status": "online",
+      "created_at": "2026-05-27T10:11:15.603859+00:00",
+      "updated_at": "2026-07-16T17:24:20.859005+00:00"
+    },
+    "e6feab4324f2440e9beef9e66c7c66f2": {
+      "id": "e6feab4324f2440e9beef9e66c7c66f2",
+      "capability_type": "威胁情报平台",
+      "name": "微步在线情报",
+      "url": "https://api.threatbook.cn/v3/file/report",
+      "model": "",
+      "api_key": "待填",
+      "token": "",
+      "cookie": "",
+      "capabilities": {
+        "probe": {
+          "ok": true,
+          "endpoint": "https://api.threatbook.cn/v3/file/report",
+          "response_code": 4,
+          "http_status": 200,
+          "message": "No Report Found"
+        }
+      },
+      "status": "online",
+      "created_at": "2026-06-06T10:13:39.383822+00:00",
+      "updated_at": "2026-06-06T10:13:45.969292+00:00"
+    }
+  }
+}
